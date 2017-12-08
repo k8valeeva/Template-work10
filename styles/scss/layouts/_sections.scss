@@ -1,0 +1,42 @@
+.welcome-section{
+  background: url("../../img/bg-welcome.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 750px;
+
+  .welcome-slogan{
+    padding: 20% 0 0;
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome-section{
+    height: auto;
+  }
+
+  .welcome-section .welcome-slogan{
+    padding: 40% 0 0;
+  }
+}
+
+@media (max-width: 767px){
+  .welcome-section .welcome-slogan{
+    padding: 50% 0 0;
+  }
+}
+
+.features-section{
+  padding: 150px 0 30px;
+}
+
+.team-section{
+  padding: 100px 0 75px;
+}
+
+.download-section{
+  padding: 120px 0;
+  text-align: center;
+}

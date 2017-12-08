@@ -1,0 +1,58 @@
+.logo{
+  max-width: 86px;
+  max-height: 25px;
+  overflow: hidden;
+}
+
+.navbar-brand{
+  padding: 0;
+  margin: 0;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light,
+.navbar-nav{
+  padding: 0;
+}
+
+.top-menu{
+  font: $sm-font-size $base-font-bold;
+  color: $text-color-light;
+  text-transform: uppercase;
+
+  li{
+    margin-left: 65px;
+
+    &:first-child{
+      margin-left: 0;
+    }
+
+    a{
+      color: $text-color-light;
+
+      &:hover{
+        color: $text-color-white;
+        text-decoration: none;
+      }
+
+      &.active{
+        color: $text-color-accent;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px){
+  .top-menu{
+    font-size: 22px;
+    line-height: 50px;
+    margin: 30px 0;
+    text-align: right;
+    opacity: .8;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+

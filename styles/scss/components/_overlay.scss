@@ -1,0 +1,52 @@
+.hover-block-works{
+  background: rgba(232, 69, 69, 0.9);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: opacity, 0.3s;
+
+  .works-caption{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    color: $text-color-white;
+  }
+}
+
+.work-overlay{
+  img, h3, p{
+    transition: all, 0.5s;
+  }
+
+  h3{
+    margin-bottom: 5px;
+    transform: translate3d(0, -200%, 0);
+    font: $base-font-size $base-font-bold;
+    text-transform: uppercase;
+  }
+
+  p{
+    transform: translate3d(0, 200%, 0);
+  }
+}
+
+.work-overlay:hover{
+  img{
+    transform: scale(1.3);
+  }
+
+  .hover-block-works{
+    opacity: 1;
+
+    h3, p{
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+

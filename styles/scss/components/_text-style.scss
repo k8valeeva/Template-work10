@@ -1,0 +1,89 @@
+.slogan-big-text{
+  font: $big-font-size $big-text-font;
+  color: $text-color-white;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.secondary-font{
+  font: $secondary-font-size $base-font;
+  line-height: 35px;
+  color: #e3e4e7;
+  margin-bottom: 80px;
+
+  &-caption{
+    font: $secondary-font-size $base-font;
+    color: $text-color-black;
+  }
+}
+
+@media (max-width: 991px) {
+ .slogan-big-text{
+    font-size: 4.643vmin;
+  }
+
+  .secondary-font{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 575px) {
+  .slogan-big-text {
+    font-size: 30px;
+  }
+}
+
+.caption-text{
+  font: $base-font-size $base-font-bold;
+  color: $text-color-black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  &-section{
+    font: $captions-font-size $captions-font;
+    color: $text-color-black;
+  }
+
+  &-light{
+    font: $base-font-size $base-font-bold;
+    color: $text-color-white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+
+.accent-text{
+  font-size: $sm-font-size ;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $text-color-accent;
+  margin-bottom: 15px;
+}
+
+.italic-style{
+  font: $quotes-font-size $quotes-font;
+  line-height: 40px;
+  color: $text-color-white;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1270px) {
+ .italic-style{
+   font-size: 25px;
+   line-height: 30px;
+ }
+}
+
+.sm-bold{
+  font: $sm-font-size $base-font-bold;
+  text-transform: uppercase;
+  color: $text-color-white;
+
+  &-dark{
+    font: $sm-font-size $base-font-bold;
+    text-transform: uppercase;
+    color: $text-color-black;
+    line-height: 35px;
+    margin-bottom: 40px;
+  }
+}

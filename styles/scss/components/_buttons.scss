@@ -1,0 +1,20 @@
+button{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.btn-main{
+  font: $sm-font-size $btn-font;
+  color: $text-color-white;
+  text-transform: uppercase;
+  background: $brand-color;
+  padding: 15px 55px;
+
+  &:hover{
+    color: $text-color-white;
+    background: #ae4141;
+    text-decoration: none;
+  }
+}

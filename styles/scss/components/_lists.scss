@@ -1,0 +1,95 @@
+//* FEATURES *//
+.list-features{
+  margin: 0 auto;
+
+  li{
+    padding: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      width: 100px;
+      height: 65px;
+      background: url("../../img/features-set.png") no-repeat;
+      position: absolute;
+      top: -5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+//* WORK SECTION *//
+.list-project{
+  margin: 0 auto;
+
+  li{
+    margin: 0 auto;
+    padding: 0;
+    border: 0.5px solid #fff;
+  }
+}
+
+
+//* TEAM *//
+.list-team{
+  margin: 0 auto;
+}
+
+.social-link{
+  margin: 25px 0 35px;
+
+  li{
+    border: 1px solid #c6cacc;
+    color: #c6cacc;
+  }
+}
+
+.list-share{
+  color: $text-color-white;
+
+  li{
+    border: 1px solid #fff;
+  }
+}
+
+.social-link,
+.list-share{
+  @include display-flex;
+  font-size: 22px;
+
+  li{
+    margin-right: 5px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    &:hover{
+      border: 1px solid $brand-color;
+      color: $text-color-white;
+      background: $brand-color;
+    }
+
+    a{
+      @include display-flex;
+      @include align-items(center);
+      @include justify-content(center);
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 991px){
+  .list-team li{
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    text-align: center;
+  }
+}

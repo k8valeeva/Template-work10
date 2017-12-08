@@ -1,0 +1,17 @@
+.footer{
+  background: $bg-dark-color;
+  padding: 70px 0;
+}
+
+.footer-info{
+  margin:  0 auto;
+
+  > div{
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    text-align: center;
+    padding: 0 30px;
+    margin-bottom: 30px;
+  }
+}

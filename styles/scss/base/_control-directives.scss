@@ -1,0 +1,13 @@
+$step: 100;
+$i:1;
+$position: 0;
+@for $i from 1 to 7 {
+  .list-features li:nth-child(#{$i}):before{
+
+    @if $i > 1{
+
+      $position: (($i - 1) * -$step);
+    }
+    background-position: #{$position}px 0;
+  }
+}

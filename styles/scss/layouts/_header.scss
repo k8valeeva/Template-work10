@@ -1,0 +1,23 @@
+.header-container{
+  padding: 45px 15px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255 , 0.2);
+  max-width: 1170px;
+  width: 100%;
+  transition: padding 0.3s;
+}
+
+#header{
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.fixed{
+  background: $bg-dark-color;
+}
+
+#header.fixed .header-container{
+  padding: 25px 15px;
+  border-bottom: 0;
+}

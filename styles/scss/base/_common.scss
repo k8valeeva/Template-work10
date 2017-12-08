@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+
+  &:focus{
+    outline: none!important;
+  }
+}
+
+@media (min-width: 1200px){
+.container {
+  max-width: 1170px;
+  }
+}
+
+a{
+  color: $text-color-white;
+  cursor: pointer;
+}
+
+body{
+  font: $base-font-size $base-font;
+  line-height: $base-line-height;
+  color: $text-color-dark;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+img{
+  display: block;
+}
